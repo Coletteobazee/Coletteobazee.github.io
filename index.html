@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Colette Obazee — Portfolio</title>
+  <meta name="description" content="Colette Obazee — Health Informatics, Data & Project Management, Healthcare Operations">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --card: #121821;
+      --muted: #8aa0b3;
+      --accent: #5dd0ff;
+      --text: #e6eef5;
+      --chip: #1a2330;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      background: linear-gradient(170deg, #0b0f14 0%, #0e1420 100%);
+      color: var(--text);
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+    header { display: grid; gap: 18px; padding: 40px 0 8px; }
+    .title { font-size: clamp(28px, 5vw, 44px); line-height: 1.1; font-weight: 800; }
+    .subtitle { color: var(--muted); font-size: clamp(14px, 2.6vw, 18px); }
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { background: var(--chip); color: #d9e7f3; padding: 8px 12px; border-radius: 999px; font-size: 13px; border: 1px solid #223047; }
+    .cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 8px; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 8px; padding: 10px 14px; border-radius: 12px; border: 1px solid #2a3a52; background: #101724;
+      color: #def2ff; font-weight: 600;
+    }
+    .btn.primary { background: linear-gradient(90deg, #1c82e3, #03b1ff); border: none; color: white; }
+    section { margin: 26px 0 8px; }
+    h2 { font-size: 22px; margin: 0 0 16px; letter-spacing: 0.2px; }
+    .grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card { background: var(--card); border: 1px solid #1a2536; border-radius: 16px; padding: 16px; display: grid; gap: 10px; }
+    .card h3 { margin: 0; font-size: 18px; }
+    .card p { margin: 0; color: var(--muted); font-size: 14px; }
+    .meta { display: flex; gap: 8px; flex-wrap: wrap; }
+    .meta span { background: #0f1722; border: 1px solid #1e2a3d; border-radius: 10px; padding: 4px 8px; font-size: 12px; color: #cfe4f5; }
+    details { background: var(--card); border: 1px solid #1a2536; border-radius: 14px; padding: 12px 14px; }
+    summary { cursor: pointer; font-weight: 600; }
+    footer { color: var(--muted); font-size: 13px; padding: 36px 0; }
+    .two-col { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    ul { padding-left: 18px; margin: 8px 0; }
+    li { margin: 6px 0; }
+    .badge { font-size: 12px; padding: 2px 8px; border: 1px solid #274865; border-radius: 999px; background: #0f1a24; color: #d8ecff; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">Colette Obazee</div>
+      <div class="subtitle">Health Informatics · Data & Project Management · Healthcare Operations</div>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">Power BI</span>
+        <span class="chip">Tableau</span><span class="chip">SAS</span><span class="chip">Process Mining</span>
+        <span class="chip">EHR Systems</span><span class="chip">RAG/AI</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/Coletteobazee?tab=repositories" target="_blank" rel="noopener">GitHub Profile</a>
+        <a class="btn" href="#projects">View Projects</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p class="subtitle">
+        I blend clinical training with health informatics and data-driven operations. I enjoy building simple, reliable analytics and workflow tools that help
+        teams deliver better care with less friction.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>LearnSync — Personal Study Planner</h3>
+          <p>AI-powered study planner that converts instructor feedback into 7‑day plans with micro‑tasks and resource links.</p>
+          <div class="meta">
+            <span>AI/RAG</span><span>Python</span><span>Vector DB</span>
+          </div>
+          <a href="https://github.com/Coletteobazee/Learn-Sync---Personal-Study-Planner" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <div class="card">
+          <h3>ForkCast — Smart Meal Planning</h3>
+          <p>Hackathon project recommending nutritious recipes from pantry items and health goals to reduce waste and improve diet.</p>
+          <div class="meta"><span>Hackathon</span><span>Python</span></div>
+          <a href="https://github.com/Coletteobazee?tab=repositories" target="_blank" rel="noopener">Overview</a>
+        </div>
+        <div class="card">
+          <h3>Financial Fraud Detection</h3>
+          <p>TKH project training ML classifiers to detect fraudulent transactions and compare model performance.</p>
+          <div class="meta"><span>ML</span><span>Python</span><span>Scikit-learn</span></div>
+          <a href="https://github.com/Coletteobazee/tlab-financial-fraud-detection" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <div class="card">
+          <h3>Humanitarian Funding EDA</h3>
+          <p>EDA of global humanitarian needs and funding gaps (2010–2024); trends, coverage, and visual summaries.</p>
+          <div class="meta"><span>EDA</span><span>Pandas</span><span>Matplotlib</span></div>
+          <a href="https://github.com/Zyjones/Crisis---Humanitarian-Needs-EDA" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <div class="card">
+          <h3>Weather & Coffee Analysis</h3>
+          <p>Explores weather patterns in Minas Gerais, Brazil, and their relation to coffee production signals.</p>
+          <div class="meta"><span>EDA</span><span>Python</span></div>
+          <a href="https://github.com/Coletteobazee/weather-analysis-EDA" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <div class="card">
+          <h3>Review Sentiment Analysis</h3>
+          <p>Sentiment analysis on product reviews (coconut water) using Python and OpenAI for text classification.</p>
+          <div class="meta"><span>NLP</span><span>Python</span></div>
+          <a href="https://github.com/Coletteobazee/review-sentiment-project" target="_blank" rel="noopener">Repository</a>
+        </div>
+        <div class="card">
+          <h3>Heart Rate Data Engineering</h3>
+          <p>Parses raw HR logs, computes key metrics, and produces plots for engineering assessment.</p>
+          <div class="meta"><span>Data Eng</span><span>Python</span></div>
+          <a href="https://github.com/Coletteobazee/hr-data-engineering" target="_blank" rel="noopener">Repository</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Hackathons</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Apps for Well‑being Hackathon 2.0 — Pathern</h3>
+          <p>Wellness app for people affected by cancer; community connection and personalized resources.</p>
+          <span class="badge">KSU · 2024</span>
+        </div>
+        <div class="card">
+          <h3>Bloomberg TKH Hackathon — ForkCast</h3>
+          <p>AI‑assisted nutrition planner leveraging pantry inventory and goals.</p>
+          <span class="badge">TKH · 2025</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>Data & Analytics</h3>
+          <ul>
+            <li>Python, Pandas, scikit‑learn, Jupyter</li>
+            <li>SQL, Data modeling</li>
+            <li>Power BI, Tableau</li>
+            <li>SAS / SPSS, Orange</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Healthcare & Tooling</h3>
+          <ul>
+            <li>EHR & EMR: OpenMRS, OpenEHR, VistA (familiar)</li>
+            <li>Process Mining: Fluxicon Disco</li>
+            <li>Lucidchart / draw.io · Canva · Adobe</li>
+            <li>Git/GitHub · VS Code</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education & Coursework</h2>
+      <details>
+        <summary>MSHMI — Selected courses & research</summary>
+        <div class="two-col">
+          <div>
+            <h3>Core Courses</h3>
+            <ul>
+              <li>Database Systems in Healthcare; EHR Systems; Data Mining & Visualization</li>
+              <li>Healthcare Info Systems Development; Clinical Workflows; Governance & Risk</li>
+              <li>Economic Strategy & Leadership; Management Ethics & Leadership</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Selected Research/Projects</h3>
+            <ul>
+              <li>Responsible AI in Healthcare & IoMT</li>
+              <li>Emergency Dept Flow Optimization (review)</li>
+              <li>Oura Ring in Telehealth (device study)</li>
+            </ul>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Best way: GitHub profile above. You can also add LinkedIn later.</p>
+    </section>
+
+    <footer>
+      <div>Last updated: Oct 18, 2025</div>
+    </footer>
+  </div>
+</body>
+</html>
